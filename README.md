@@ -8,7 +8,6 @@ DukeNgn's port is also a port of [kinduff/dog-api](https://github.com/kinduff/do
 
 > Note: The project is being hosted by Heroku with free dyno; thus, there will be potential delay the first time you make a request (app went to sleep after dyno does not receive traffic in 1 hour). Please be patient, and the call will be faster next time.
 
-
 ## Running the Project Locally
 - Clone the Repo
 - ``npm start`` or ``nodemon`` can be used to start the server. 
@@ -17,6 +16,7 @@ DukeNgn's port is also a port of [kinduff/dog-api](https://github.com/kinduff/do
 ## Usage
 - https://dogfacts-api.herokuapp.com/api/v1/resources/dogs for all the dog facts.
 - https://dogfacts-api.herokuapp.com/api/v1/resources/dogs?number={number} for a particular number of random dog facts.
+- https://dogfacts-api.herokuapp.com/api/v1/resources/dogs?index={index} for a dog fact associated with the index - there are 435 total facts.
 
 ## Example:
 http://localhost:5000/api/v1/resources/dogs?number=2 for 2 random dog facts. 
