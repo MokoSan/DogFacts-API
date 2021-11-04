@@ -1,0 +1,21 @@
+{
+  "name": "dog-facts-api",
+  "version": "1.0.0",
+  "description": "Rest based API that returns facts about dogs. Heavily inspired by the following python implementation: https://github.com/DukeNgn/Dog-facts-API/",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "API",
+    "REST"
+  ],
+  "author": "MokoSan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
