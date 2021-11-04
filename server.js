@@ -33,7 +33,8 @@ function shuffleArray(array) {
     }
 }
 
-// Get all. 
+// Params allowed: number and index.
+// No params => get all.
 app.get("/api/v1/resources/dogs", (req, res) => {
 
     // Check the params for the number of facts requested by the user.
@@ -49,9 +50,19 @@ app.get("/api/v1/resources/dogs", (req, res) => {
         res.status(200).send(copyOfAllFacts.slice(0, number));
     }
 
+    // Check params for the index requested by the user.
+    else if (req.query.index) {
+        let index = req.query.index;
+        if (index < 0 || index > allFacts.length - 1) {
+            res.status(400).send("index specified is not valid. There are 425 facts.")
+        }
+        else {
+            res.status(200).send(allFacts[index]);
+        }
+    }
+
     // Else if the request params don't contain the number of facts to be returned, return all the facts.
     else {
-        // Grab `number` random facts.
         res.status(200).send(allFacts);
     }
 });
