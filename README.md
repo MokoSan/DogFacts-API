@@ -19,7 +19,7 @@ DukeNgn's port is also a port of [kinduff/dog-api](https://github.com/kinduff/do
 - https://dogfacts-api.herokuapp.com/api/v1/resources/dogs?index={index} for a dog fact associated with the index - there are 435 total facts.
 
 ## Example:
-http://localhost:5000/api/v1/resources/dogs?number=2 for 2 random dog facts. 
+https://dogfacts-api.herokuapp.com/api/v1/resources/dogs?number=2 for 2 random dog facts. 
 
 ### Output:
 ```
