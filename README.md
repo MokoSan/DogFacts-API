@@ -10,6 +10,7 @@ DukeNgn's port is also a port of [kinduff/dog-api](https://github.com/kinduff/do
 
 ## Running the Project Locally
 - Clone the Repo
+- ``npm install`` to install the dependencies.
 - ``npm start`` or ``nodemon`` can be used to start the server. 
 - ``process.env.PORT || 5000`` is logic to discern the port. 
 
